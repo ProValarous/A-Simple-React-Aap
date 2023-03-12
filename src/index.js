@@ -3,11 +3,19 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import userData from './user';
+import User from './components/main';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+
 root.render(
   <React.StrictMode>
-    <App />
+    <User profile={userData.user1}/>
+    <User profile={userData.user2}/>
+    <User profile={userData.user3}/>
+
   </React.StrictMode>
 );
 
